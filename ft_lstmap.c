@@ -6,7 +6,7 @@
 /*   By: mle-roy <mle-roy@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/12/10 18:04:43 by mle-roy           #+#    #+#             */
-/*   Updated: 2013/12/10 18:47:29 by mle-roy          ###   ########.fr       */
+/*   Updated: 2015/01/31 20:29:12 by mle-roy          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ static void		free_lst(void *content, size_t t)
 {
 	if (content != NULL)
 		free(content);
-	t = 0;
+	(void)t;
 }
 
 t_list		*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))
