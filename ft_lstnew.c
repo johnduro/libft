@@ -6,7 +6,7 @@
 /*   By: mle-roy <mle-roy@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/12/10 18:18:32 by mle-roy           #+#    #+#             */
-/*   Updated: 2013/12/10 18:23:21 by mle-roy          ###   ########.fr       */
+/*   Updated: 2015/01/31 21:45:04 by mle-roy          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ t_list		*ft_lstnew(void const *content, size_t content_size)
 {
 	t_list		*ret;
 
-	if ((ret = (t_list *) malloc(sizeof(*ret))) == NULL)
+	if ((ret = (t_list *)malloc(sizeof(*ret))) == NULL)
 		return (NULL);
 	if (content == NULL)
 	{

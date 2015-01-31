@@ -6,7 +6,7 @@
 /*   By: mle-roy <mle-roy@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/12/28 19:48:08 by mle-roy           #+#    #+#             */
-/*   Updated: 2013/12/28 19:48:54 by mle-roy          ###   ########.fr       */
+/*   Updated: 2015/01/31 21:48:16 by mle-roy          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ int					ft_isspace(int c)
 {
 	unsigned char	val;
 
-	val = (unsigned char) c;
+	val = (unsigned char)c;
 	if (val == '\t' || val == '\n' || val == '\v'
 		|| val == '\f' || val == '\r' || val == ' ')
 		return (1);

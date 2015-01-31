@@ -6,7 +6,7 @@
 /*   By: mle-roy <mle-roy@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/01/29 11:51:52 by mle-roy           #+#    #+#             */
-/*   Updated: 2014/01/31 19:04:38 by mle-roy          ###   ########.fr       */
+/*   Updated: 2015/01/31 21:38:47 by mle-roy          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,8 @@ static char			**space_splitting(char const *s, char **tab)
 	{
 		if (!ft_isspace(s[i]))
 		{
-			tab[x++] = ft_strsub(s, i, len = until_space(&s[i]));
+			len = until_space(&s[i]);
+			tab[x++] = ft_strsub(s, i, len);
 			i += len;
 		}
 		else

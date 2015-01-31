@@ -6,13 +6,12 @@
 /*   By: mle-roy <mle-roy@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/25 13:08:55 by mle-roy           #+#    #+#             */
-/*   Updated: 2013/11/26 16:51:24 by mle-roy          ###   ########.fr       */
+/*   Updated: 2015/01/31 21:39:10 by mle-roy          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 #include "libft.h"
-
 
 static size_t		ft_strlenws(char const *s, char c)
 {

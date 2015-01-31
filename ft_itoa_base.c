@@ -6,7 +6,7 @@
 /*   By: mle-roy <mle-roy@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/02/11 15:03:05 by mle-roy           #+#    #+#             */
-/*   Updated: 2014/02/11 15:04:40 by mle-roy          ###   ########.fr       */
+/*   Updated: 2015/01/31 21:46:21 by mle-roy          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_itoa_base(int val, int base, int output_size)
 	unsigned int	unsigned_val;
 
 	table = "0123456789abcdefghijklmnopqrstuvwxyz";
-	unsigned_val = (unsigned int) val;
+	unsigned_val = (unsigned int)val;
 	if (base > 36 || base < 2)
 		return (NULL);
 	buffer[output_size + 1] = 0;

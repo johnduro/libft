@@ -6,7 +6,7 @@
 /*   By: mle-roy <mle-roy@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/12/10 18:04:43 by mle-roy           #+#    #+#             */
-/*   Updated: 2015/01/31 20:29:12 by mle-roy          ###   ########.fr       */
+/*   Updated: 2015/01/31 21:45:41 by mle-roy          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ static void		free_lst(void *content, size_t t)
 	(void)t;
 }
 
-t_list		*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))
+t_list			*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))
 {
 	t_list		*tmp;
 	t_list		*new;
@@ -33,7 +33,7 @@ t_list		*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))
 		if ((new = ft_lstnew(tmp->content, tmp->content_size)) == NULL)
 		{
 			ft_lstdel(&start, free_lst);
-				return (NULL);
+			return (NULL);
 		}
 		if (start == NULL)
 			start = new;

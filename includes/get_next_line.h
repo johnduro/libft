@@ -6,7 +6,7 @@
 /*   By: mle-roy <mle-roy@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/12/03 14:35:21 by mle-roy           #+#    #+#             */
-/*   Updated: 2013/12/08 15:49:12 by mle-roy          ###   ########.fr       */
+/*   Updated: 2015/01/31 21:58:58 by mle-roy          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,4 +17,4 @@
 
 int		get_next_line(int const fd, char **line);
 
-#endif /* !GET_NEXT_LINE_H */
+#endif

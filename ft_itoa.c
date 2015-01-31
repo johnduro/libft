@@ -6,7 +6,7 @@
 /*   By: mle-roy <mle-roy@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/25 13:11:35 by mle-roy           #+#    #+#             */
-/*   Updated: 2013/11/28 16:27:01 by mle-roy          ###   ########.fr       */
+/*   Updated: 2015/01/31 21:56:45 by mle-roy          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,12 +30,13 @@ void	ft_filltemp(char *temp, int *l, int n)
 char	*ft_itoa(int n)
 {
 	char	*newc;
-	char	temp[] = "00000000000";
+	char	temp[11];
 	int		l;
 	int		neg;
 
 	l = 10;
 	neg = 0;
+	ft_strcpy(temp, "00000000000");
 	if (n == 0)
 		l--;
 	else

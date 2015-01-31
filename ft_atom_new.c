@@ -6,7 +6,7 @@
 /*   By: mle-roy <mle-roy@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/02/11 16:05:31 by mle-roy           #+#    #+#             */
-/*   Updated: 2014/02/11 16:11:02 by mle-roy          ###   ########.fr       */
+/*   Updated: 2015/01/31 21:48:43 by mle-roy          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ t_atom		*ft_atom_new(void const *content, size_t size)
 {
 	t_atom		*new_atom;
 
-	new_atom = (t_atom *) ft_memalloc(sizeof(*new_atom));
+	new_atom = (t_atom *)ft_memalloc(sizeof(*new_atom));
 	if (new_atom)
 	{
 		if (content == NULL)
